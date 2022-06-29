@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Fascinate&family=PT+Serif&family=Rubik+Moonrocks&family=Special+Elite&family=Stoke&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Fascinate&family=PT+Serif&family=Rubik+Moonrocks&family=Special+Elite&family=Stoke&display=swap');
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-image: url("./DJI_0019-Opening-Night.jpg");
+    height: 100%;
+    width: 70%;
+   
+  }
+  
+ .mainbox{
+  position: relative;
+  width: 500px;
+  height: 500px;
+  margin-top: 50px;
+  margin-left: 100px;
+ }
+
+ .mainbox:after{
+   position: absolute;
+   content: "";
+   width: 100%;
+   height: 100%;
+   background-image: url("arrow.png");
+   background-repeat: no-repeat;
+   background-size: 60%;
+   left: 28%;
+   top: 120px;
+ }
+ 
+
+
+ .box{
+  width: 70%;
+  height: 70%;
+  position: relative;
+  border-radius: 50%;
+  border: 10px solid whitesmoke;
+  overflow: hidden;
+  transition: all ease-in-out 5s;
+  transition: rotate(90deg);
+
+
+ }
+
+ .box2{
+  width: 70%;
+  height: 70%;
+  position: relative;
+  border-radius: 50%;
+  border: 10px solid whitesmoke;
+  overflow: hidden;
+  transition: all ease-in-out 5s;
+  transition: rotate(180deg);
+
+ }
+
+  span{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    position: absolute;
+
+  }
+ 
+
+  .span1{
+    clip-path: polygon(0 17%, 0 50%, 50% 50%);
+    background-color: #31708E;
+  }
+  .span2{
+    clip-path: polygon(0 17%, 30% 0, 50% 50%);
+    background-color:  #8FC1E3;
+  }
+  .span3{
+    clip-path: polygon(30% 0, 71% 0, 50% 50%);
+    background-color: #31708E;
+  }
+
+  
+  .span4{
+    clip-path: polygon(71% 0, 100% 18%, 50% 50%);
+    background-color:  #8FC1E3;
+  }
+
+  .span5{
+    clip-path: polygon(100% 18%, 100% 50%, 50% 50%);
+    background-color: #31708E;
+  }
+
+  .span6{
+      clip-path:  polygon(130% 50%, 100% 80%, 50% 50%);
+      background-color: #8FC1E3;
+  }
+  .span7{
+    clip-path:  polygon(100% 150%, 100% 80%, 50% 50%);
+    background-color:  #31708E;
+}
+.span8{
+  clip-path:  polygon(100% 150%, 30% 100%, 50% 50%);
+  background-color: #8FC1E3;
+}
+.span9{
+  clip-path:  polygon(-10% 350%, 0 90%, 50% 50%);
+  background-color:  #31708E;
+}
+.span10{
+  clip-path:  polygon(-330% 350%, 0 50%, 50% 50%);
+  background-color: #8FC1E3;
+}
+
+
+ 
+
+   
+  .font{
+    color:#fff;
+    font-size:140%;
+  }
+
+  
+.box .span4 h5{
+  position: absolute; 
+  top:15%;
+  right: 20%; 
+ transform: rotate(305deg); 
+ text-align:center;  
+}
+
+.box .span5 h5{
+  position: absolute; 
+  top:28%;
+  right: 5%; 
+ transform: rotate(335deg); 
+ text-align:center;  
+}
+
+
+.box .span2 h5{
+  /* font-size: 45px; */
+  position: absolute; 
+  top: 15%;
+  left: 20%;
+ transform: rotate(235deg); 
+ text-align:center;  
+}
+.box .span1 h5{
+  /* font-size: 30px; */
+  position: absolute; 
+  top: 30%;
+  left: 8%;
+ transform: rotate(195deg); 
+ text-align:center;  
+}
+
+
+.box .span3 h5{
+    font-size: 19px;
+    margin-top: -18%;
+    margin-right: 5px;
+    transform: rotate(270deg); 
+}
+
+
+
+.box .span6 h5 {
+  position: absolute;
+  top: 48%;
+  right: 5%;
+  transform: rotate(20deg);
+  text-align: center;
+}
+
+.box .span7 h5 {
+  position: absolute;
+  top: 60%;
+  right: 16%;
+  transform: rotate(50deg);
+  text-align: center;
+}
+
+.box .span8 h5 {
+  position: absolute;
+  top: 70%;
+  right: 34%;
+  transform: rotate(86deg);
+  text-align: center;
+}
+
+.box .span9 h5 {
+  position: absolute;
+  top: 63%;
+  right: 54%;
+  transform: rotate(116deg);
+  text-align: center;
+}
+
+.box .span10 h5 {
+  position: absolute;
+  top: 48%;
+  right: 64%;
+  transform: rotate(150deg);
+  text-align: center;
+}
+
+
+
+.spin{
+   position:absolute;
+   top: 75%;
+   left: 75%;
+   transform: translate(-50%,-50%);
+   width: 15%;
+   height: 10%;
+   /* border-radius: 50%; */
+   border:4px solid white;
+   background: #1D76E5;
+   color:#fff;
+   box-shadow: 0 5px 20px #000;
+   font-weight: bold;
+   font-size: 22px;
+   cursor:pointer;
+   z-index:1000;
+}
+
+
+.spin:active{
+  width:70px;
+  height: 70px;
+  font-size:20px;
+}
+
+.mainbox.animate:after{
+  animation: animateArroe 0.7s ease infinite;
+}
+
+@keyframes animateArrow {
+  50%{
+    right: -50px;
+
+  }
+}
+
+
+.glow-on-hover {
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  margin-top: 400px;
+  margin-left:600px;
+
+}
+
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #000
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+#mybtn{
+  margin-left:200px;
+ margin-top:200px;
+}
+
+
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+
+.test{
+  margin-left: 730px;
+   margin-top: -450px;
+   margin-bottom: 180px;
+   font-family: 'Concert One', cursive;
+font-family: 'Fascinate', cursive;
+font-family: 'PT Serif', serif;
+font-family: 'Rubik Moonrocks', cursive;
+font-family: 'Special Elite', cursive;
+font-family: 'Stoke', serif;
+}
+
+h1{
+  font-size: 50px;
+}
+h3{
+  font-size: 20px;
+}
