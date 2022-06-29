@@ -62,7 +62,7 @@ function spin(){
 setTimeout(function(){
   //alert;
   Swal.fire({
-    title:'Congratulation 🎉🎉you have won 25% OFF',
+    title:'Congratulations 🎉🎉you have won 25% OFF',
     showClass: {
       popup: 'animate__animated animate__fadeInDown'
     },
